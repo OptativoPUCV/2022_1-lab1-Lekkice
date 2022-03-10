@@ -83,7 +83,9 @@ Vector * crearVector(int n) {
    Vector vector;
    vector.datos = arregloDatos;
    vector.capacidad = n;
-   return &vector;
+
+   Vector * ptrVector = &vector;
+   return ptrVector;
 }
 
 /*
