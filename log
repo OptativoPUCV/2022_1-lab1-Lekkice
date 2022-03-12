@@ -563,3 +563,25 @@ test.c:84:13: error: passing argument 1 to restrict-qualified parameter aliases 
 cc1.exe: all warnings being treated as errors
 Compilation failed
 4f52d1c
+vi., 11 de mar. de 2022 23:35:29: 
+test.c: In function 'test_suma_n':
+test.c:82:26: warning: format '%s' expects argument of type 'char *', but argument 3 has type 'int' [-Wformat=]
+         sprintf(msg,"%.50s %d,",a[i]);
+                      ~~~~^      ~~~~
+                      %.50d
+test.c:82:29: warning: format '%d' expects a matching 'int' argument [-Wformat=]
+         sprintf(msg,"%.50s %d,",a[i]);
+                            ~^
+test.c:82:26: warning: format '%s' expects argument of type 'char *', but argument 3 has type 'int' [-Wformat=]
+         sprintf(msg,"%.50s %d,",a[i]);
+                      ~~~~^      ~~~~
+                      %.50d
+test.c:82:29: warning: format '%d' expects a matching 'int' argument [-Wformat=]
+         sprintf(msg,"%.50s %d,",a[i]);
+                            ~^
+test.c:84:22: warning: format '%s' expects a matching 'char *' argument [-Wformat=]
+     sprintf(msg,"%.50s]");
+                  ~~~~^
+test.c:84:22: warning: format '%s' expects a matching 'char *' argument [-Wformat=]
+ tests:  0|0
+959e8a8
