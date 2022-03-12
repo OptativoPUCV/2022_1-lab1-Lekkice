@@ -585,3 +585,9 @@ test.c:84:22: warning: format '%s' expects a matching 'char *' argument [-Wforma
 test.c:84:22: warning: format '%s' expects a matching 'char *' argument [-Wformat=]
  tests:  0|0
 959e8a8
+sá., 12 de mar. de 2022 15:07:28: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  7|1
+total_score: 60/70
+d50a9d6
