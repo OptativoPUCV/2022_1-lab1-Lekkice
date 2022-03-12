@@ -130,10 +130,14 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
    Vector vector1;
    vector1.datos = (int *) malloc(sizeof(int) * 2);
    vector1.capacidad = 2;
+   vector1.datos[0] = a1;
+   vector1.datos[1] = a2;
 
    Vector vector2;
    vector2.datos = (int *) malloc(sizeof(int) * 2);
    vector2.capacidad = 2;
+   vector2.datos[0] = b1;
+   vector2.datos[1] = b2;
 
    sumaV(&vector1, &vector2, c);
    return;
